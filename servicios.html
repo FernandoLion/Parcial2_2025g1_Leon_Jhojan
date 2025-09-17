@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - CoderHub.run</title>
+    <link rel="icon" href="./img/icon.svg">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div id="loader">
+        <img style="height: 500px; width: 500px;" src="./img/logoGrande.png" alt="Logo">
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo100.png" class="imgLogo" alt="logo"> CoderHub.run
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Nuestros Servicios</h1>
+            <p class="lead animate__animated animate__fadeInUp">Soluciones completas para todas tus necesidades
+                tecnológicas</p>
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+    <h1 class="text-center mb-4">Nuestros Servicios</h1>
+    <p class="lead text-center mb-5">Soluciones completas para todas tus necesidades tecnológicas 🚀</p>
+
+    
+    <div class="filter-btns">
+      <button class="btn btn-outline-primary active" onclick="filterServices('all')">Todos</button>
+      <button class="btn btn-outline-primary" onclick="filterServices('web')">Web</button>
+      <button class="btn btn-outline-primary" onclick="filterServices('apps')">Apps</button>
+      <button class="btn btn-outline-primary" onclick="filterServices('consultoria')">Consultoría</button>
+      <button class="btn btn-outline-primary" onclick="filterServices('soporte')">Soporte</button>
+      <button class="btn btn-outline-primary" onclick="filterServices('marketing')">Marketing</button>
+      <button class="btn btn-outline-primary" onclick="filterServices('ia')">IA</button>
+    </div>
+
+   
+    <div class="row" id="services-list">
+     
+      <div class="col-lg-4 col-md-6 mb-4 service-item web">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-globe"></i></div>
+          <h4>Desarrollo Web</h4>
+          <p>Sites modernos, rápidos y optimizados para SEO.</p>
+        </div>
+      </div>
+
+ 
+      <div class="col-lg-4 col-md-6 mb-4 service-item apps">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+          <h4>Apps Móviles</h4>
+          <p>Aplicaciones nativas e híbridas para iOS y Android.</p>
+        </div>
+      </div>
+
+   
+      <div class="col-lg-4 col-md-6 mb-4 service-item consultoria">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+          <h4>Consultoría</h4>
+          <p>Estrategias tecnológicas para la transformación digital.</p>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4 col-md-6 mb-4 service-item soporte">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-headset"></i></div>
+          <h4>Soporte 24/7</h4>
+          <p>Garantizamos el funcionamiento óptimo de tus sistemas.</p>
+        </div>
+      </div>
+
+    
+      <div class="col-lg-4 col-md-6 mb-4 service-item marketing">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
+          <h4>Marketing Digital</h4>
+          <p>Estrategias de posicionamiento en redes sociales y Google.</p>
+        </div>
+      </div>
+
+    
+      <div class="col-lg-4 col-md-6 mb-4 service-item ia">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-robot"></i></div>
+          <h4>Soluciones de IA</h4>
+          <p>Automatización, chatbots y análisis predictivo.</p>
+        </div>
+      </div>
+
+     
+      <div class="col-lg-4 col-md-6 mb-4 service-item web">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-shopping-cart"></i></div>
+          <h4>E-commerce</h4>
+          <p>Tiendas online con pasarelas de pago seguras.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 service-item apps">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-gamepad"></i></div>
+          <h4>Videojuegos</h4>
+          <p>Desarrollo de juegos en Unity y Unreal Engine.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 service-item consultoria">
+        <div class="card-custom p-4 h-100">
+          <div class="icon-box"><i class="fas fa-cloud"></i></div>
+          <h4>Cloud Computing</h4>
+          <p>Migración y optimización de infraestructuras en la nube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3"><i class="fas fa-code me-2"></i>CoderHub.run</h5>
+                    <p>
+                        Transformamos ideas en soluciones digitales innovadoras. Tu
+                        socio estratégico en desarrollo de software.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/coderhub"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/coderhub"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/FernandoLion"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Navegación</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./index.html" class="text-light text-decoration-none nav-linkF">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html" class="text-light text-decoration-none nav-linkF">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./servicios.html" class="text-light text-decoration-none nav-linkF">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="./portafolio.html" class="text-light text-decoration-none nav-linkF">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="./contacto.html" class="text-light text-decoration-none nav-linkF">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Servicios</h6>
+                    <ul class="list-unstyled">
+                        <li>Desarrollo Web</li>
+                        <li>Apps Móviles</li>
+                        <li>Consultoría</li>
+                        <li>Soporte Técnico</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Contacto</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i>Florencia, Caquetá
+                        </li>
+                        <li><i class="fas fa-phone me-2"></i>+57 324 484 5079</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@coderhub.run</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4" />
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="mb-0">
+                        ©2025 CoderHub.run. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="mb-0">Hecho con ❤️ en Florencia, Colombia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="./js/js.js">
+    </script>
+</body>
+
+</html>
